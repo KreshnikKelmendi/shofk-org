@@ -1,3 +1,21 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+
+@font-face {
+    font-family: Poppins;
+    src: url(../public/fonts/Poppins-Medium.ttf)
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../public/fonts/Poppins-Regular.ttf)
+}
+
+.active{
+    color: #ff354c;
+    border-bottom: 3px solid #ff354c;
+    width: fit-content;
+    scale: 1.07;
+}
