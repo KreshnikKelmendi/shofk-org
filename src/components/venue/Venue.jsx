@@ -26,7 +26,7 @@ const Venue = () => {
             <li aria-current="page">
             <div className="flex items-center">
                 <svg className="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                 </svg>
                 <span className="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400 font-custom">{t('Venue')}</span>
             </div>
@@ -34,7 +34,7 @@ const Venue = () => {
         </ol>
     </nav>
 
-    <section className="bg-gray-50 pt-6">
+    <section className="bg-gray-50">
       <div className="w-full px-4 lg:px-16 flex flex-col lg:flex-row justify-center 2xl:items-center">
         <div className="lg:w-1/2 lg:pr-10">
             <h2 className="mb-2 text-2xl border-b border-strokeborder-b border-stroke font-semibold text-dark dark:text-white font-custom">

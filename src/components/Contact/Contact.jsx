@@ -29,7 +29,7 @@ const Contact = () => {
         </ol>
     </nav>
 
-      <section className="relative px-4 lg:px-16 bg-gray-50 pt-3 lg:py-[20px] 2xl:py-6">
+      <section className="relative px-4 lg:px-16 bg-gray-50 lg:py-[20px] 2xl:py-6">
         <div className="">
           <div className=" flex flex-col lg:flex-row justify-center items-center">
             <div className="w-full lg:w-1/2 ">
@@ -37,7 +37,7 @@ const Contact = () => {
                 <span className="mb-4 block text-base font-semibold text-primary font-custom">
                   {t('ContactUs')}
                 </span>
-                <h2 className="mb-6 text-[32px] font-bold text-[#044f7c] uppercase font-custom ">
+                <h2 className="mb-6 text-2xl font-bold text-[#044f7c] uppercase font-custom ">
                   {t('GetInTouch')}
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6 font-custom">
@@ -136,7 +136,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-           <div className="lg:w-1/2">
+           <div className="lg:w-1/2 w-full">
            <iframe 
              className='w-full h-[50vh] lg:h-[90vh] rounded-md shadow-2xl shadow-gray-300'
              title='Location of Place'

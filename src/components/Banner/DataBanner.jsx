@@ -12,7 +12,7 @@ const DataBanner = () => {
                 <span className="block mb-4 text-base font-medium text-white font-custom">
                     4th National Congress and 2nd Balkan Congress
                 </span>
-                <h2 className="mb-6 text-3xl font-bold leading-tight text-white sm:mb-8 lg:mb-0">
+                <h2 className="mb-6 text-2xl font-bold leading-tight text-white sm:mb-8 lg:mb-0">
                   <span className="xs:block font-custom">October 25th and 26th, 2024</span>
                 </h2>
               </div>

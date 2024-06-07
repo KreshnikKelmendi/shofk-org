@@ -11,28 +11,31 @@ const InvitedSpeakers = () => {
         {
             id: 1,
             icon: faPeopleGroup,
-            title: "1st Day 25th October",
-            description: "This is the list of our invited speakers for the first day of the conference on October 25th.",
+            title: "25th & 26th October",
+            description: "This is the list of our invited speakers for the 4th National Congress and 2nd Balkan Congress of Ophthalmology.",
             speakers: [
-                "Prof. Naser Salihu",
-                "Prof. Naser Salihu",
-                "Prof. Naser Salihu",
-                "Prof. Naser Salihu",
-                "Prof. Naser Salihu"
-            ]
-        },
-        {
-            id: 2,
-            icon: faPeopleGroup,
-            title: "2nd Day 25th October",
-            description: "This is the list of our invited speakers for the second day of the conference on October 26th.",
-            speakers: [
-                "Prof. Naser Salihu",
-                "Prof. Naser Salihu",
-                "Prof. Naser Salihu",
-                "Prof. Naser Salihu",
-                "Prof. Naser Salihu"
-            ]
+                "Gabor Scharioth - Germany",
+                "Minir Asani - Germany",
+                "Andreas Berlin - Germany",
+                "Daniel Meller - Germany",
+                "Vladimir Pfeifer - Slovenia",
+                "Xhevat Lumi - Slovenia",
+                "Tomislav Jukic - Croatia",
+                "Nenad Vukojevic - Croatia",
+                "Borna Saric - Croatia",
+                "Vlatka Saric - Croatia",
+                "Vesna Dimovska - North Macedonia",
+                "Athanasios Nikolakopulos - Greece",
+                "Yehia Salah Mostafa - Egypt",
+                "Pajtim Lutaj - Albania",
+                "Ilir Arapi - Albania",
+                "Arjeta Grezda - Albania",
+                "Faruk Nisic - Bosna and Hercegovina",
+                "Sania Sefic - Bosna and Hercegovina",
+                "Emina Begovic - Bosna and Hercegovina",
+                "Thomas Fenech - Malta",
+                "Angelina Meireles - Portugal"
+            ].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
         },
     ];
 
@@ -51,7 +54,7 @@ const InvitedSpeakers = () => {
 
                     <li aria-current="page">
                         <div className="flex items-center">
-                            <svg className="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <svg className="rtl:rotate-180 w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
                             </svg>
                             <span className="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400 font-custom">{t('InvitedSpeakers')}</span>
@@ -76,7 +79,7 @@ const InvitedSpeakers = () => {
             </section>
 
             <div className="bg-gray-50">
-                <div className="grid lg:grid-cols-2 px-4 lg:px-16 lg:pt-8 pt-6 gap-4">
+                <div className="grid lg:grid-cols-1 px-4 lg:px-16 lg:pt-8 pt-6">
                     {cardsData.map((card) => (
                         <div key={card.id} className="grid relative lg:h-full">
                             <p className="group shadow-lg hover:shadow-2xl duration-200 delay-75 w-full bg-gray-200 rounded-md py-6 pr-6 pl-9">
@@ -101,7 +104,7 @@ const InvitedSpeakers = () => {
 const OrderedList = ({ speakers }) => {
     return (
         <div className="mt-4">
-            <ol className="space-y-3">
+            <ol className="">
                 {speakers.map((speaker, index) => (
                     <ListItem key={index} count={index + 1} text={speaker} />
                 ))}
@@ -112,7 +115,7 @@ const OrderedList = ({ speakers }) => {
 
 const ListItem = ({ count, text }) => {
     return (
-        <li className="text-body-color dark:text-dark-6 flex text-base items-center py-6">
+        <li className="text-body-color dark:text-dark-6 flex text-base items-center py-1">
             <span className="p-4 mr-2.5 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#ff354c] text-base text-white font-custom">
                 {count}
             </span>

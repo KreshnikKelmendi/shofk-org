@@ -32,7 +32,7 @@ const About = () => {
     </ol>
     </nav>
 
-    <section className="overflow-hidden px-4 lg:px-16 pt-3 pb-1 lg:pb-[50px] bg-gray-50 dark:bg-dark">
+    <section className="overflow-hidden px-4 lg:px-16 pb-1 lg:pb-[50px] bg-gray-50 dark:bg-dark">
         <div className="mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
@@ -42,14 +42,14 @@ const About = () => {
                     <img
                       src={about1}
                       alt=""
-                      className="w-full h-[15vh] lg:h-[300px] 2xl:h-[330px] object-cover rounded-lg"
+                      className="w-full h-[20vh] lg:h-[300px] 2xl:h-[330px] object-cover rounded-lg"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <img
                       src={about2}
                       alt=""
-                      className="w-full h-[15vh] lg:h-[300px] 2xl:h-[330px] object-cover rounded-lg"
+                      className="w-full h-[20vh] lg:h-[300px] 2xl:h-[330px] object-cover rounded-lg"
                     />
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const About = () => {
                     <img
                       src={about3}
                       alt=""
-                      className="w-full h-[100%] lg:h-[500px] 2xl:h-[690px] object-cover rounded-lg"
+                      className="w-full h-[30vh] lg:h-[500px] 2xl:h-[690px] object-cover rounded-lg"
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg

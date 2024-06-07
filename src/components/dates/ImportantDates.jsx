@@ -5,22 +5,22 @@ import { useTranslation } from 'react-i18next';
 
 const importantDates = [
   {
-    title: "Another Important Date",
-    description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+    title: "Registration is open",
+    description: "Early registration 10.09.2024.",
     link: "#",
     date: "24.10.2024"
   },
   {
-    title: "Another Important Date",
+    title: "Deadline for abstract submission ",
     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
     link: "#",
-    date: "24.10.2024"
+    date: "10.09.2024"
   },
   {
-    title: "Yet Another Important Date",
+    title: "Abstract acception",
     description: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
     link: "#",
-    date: "24.10.2024"
+    date: "27.09.2024"
   },
   {
     title: "Yet Another Important Date",
@@ -34,10 +34,10 @@ const ImportantDates = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='bg-gray-50 py-10 px-4 lg:px-10 font-custom'>
+    <div className='bg-gray-50 py-10 px-4 lg:px-10 font-custom relative'>
       <p className='text-3xl text-center uppercase font-custom'>{t('ImportantDates')}</p>
       <div className='lg:w-[70%] 2xl:w-[50%] mx-auto mt-6 text-center'>
-        <p className='font-custom'><b>{t('congress4th')}</b></p>
+        {/* <p className='font-custom'><b>{t('congress4th')}</b></p> */}
         <p className='font-custom text-base'>
           {t('ImportantDatesDescription')}
         </p>
@@ -47,7 +47,7 @@ const ImportantDates = () => {
         <div key={index} className="p-6 z-50 mt-8 bg-[#044f7c] h-[100%] shadow-2xl shadow-[#044e7c8a] dark:bg-gray-800 dark:border-gray-700 rounded-md">
             <p className='flex border-b border-b-white p-2 w-fit'><FontAwesomeIcon className='text-sm text-white' icon={faCalendarDays} /><span className='ml-2 text-sm text-white'>{date.date}</span></p>
   
-            <h5 className="mb-2 mt-4 text-lg 2xl:text-xl text-justify tracking-tighter font-extrabold text-white dark:text-white">{date.title}</h5>
+            <h5 className="mb-2 mt-4 text-lg 2xl:text-xl font-extrabold text-white dark:text-white">{date.title}</h5>
      
           <p className="mb-3 font-normal text-white">{date.description}</p>
           {/* <a href={date.link} className="inline-flex mt-4 font-custom1 items-center py-2 text-sm text-center text-gray-300 hover:scale-105 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

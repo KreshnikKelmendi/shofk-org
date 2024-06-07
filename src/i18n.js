@@ -9,7 +9,9 @@ i18n
         translation: {
           "Home": "Home",
           "About": "About Us",
-          "InvitedSpeakers": "Invited Speakers",   
+          "InvitedSpeakers": "Invited Speakers",
+          "CongressMenu": "Congress 2024",
+          "PresidentInvitation": "President's Invitation",   
           "Venue": "Venue",
           "Registration": "Registration",
           "Contacts": "Contact",
@@ -39,8 +41,12 @@ i18n
 
         // Register Page  
 
+          "Register": "Register",
+          "registerDescription": "Welcome to our registration page! Register for conference participation.",
+          "simpleRegistration": "Simple & Secure Registration",
+          "simpleDescriptionRegister": "Our registration process is carefully designed to be straightforward and secure, ensuring a hassle-free experience for you. We prioritize your privacy and the security of your data, implementing stringent measures to protect your personal information at every step. Your trust is important to us, and we are committed to safeguarding it throughout the registration process.",
           "Please fill out the form below": "Please fill out the form below",
-          "InstitutionTitle": "InstitutionTitle",
+          "InstitutionTitle": "Institution Title",
           "Title": "Title (Dr, Professor, Mr, Ms, Mrs)",
           "FirstName": "First Name",
           "LastName": "Last Name",
@@ -70,11 +76,14 @@ i18n
           "EmailAddress": "Email Address"
         }
       },
+       
       alb: {
         translation: {
           "Home": "Ballina",
           "About": "Rreth Nesh",
-          "InvitedSpeakers": "Folësit e ftuar",    
+          "InvitedSpeakers": "Folësit e ftuar",   
+          "CongressMenu": "Kongresi 2024",
+          "PresidentInvitation": "Ftesa e Presidentit", 
           "Venue": "Vendi",
           "Registration": "Regjistrimi",
           "Contacts": "Kontakti",
@@ -104,6 +113,10 @@ i18n
 
           // Register Page
 
+          "Register": "Regjistrohu",
+          "registerDescription": "Mirë se vini në faqen tonë të regjistrimit! Regjistrohuni për pjesëmarrjen në konferencë.",
+          "simpleRegistration": "Regjistrim i Thjeshtë dhe i Sigurt",
+          "simpleDescriptionRegister": "Procesi ynë i regjistrimit është projektuar me kujdes që të jetë i thjeshtë dhe i sigurt, duke siguruar një përvojë pa shqetësime për ju. Ne i japim përparësi privatësisë suaj dhe sigurisë së të dhënave tuaja, duke zbatuar masa të rrepta për të mbrojtur informacionin tuaj personal në çdo hap. Besimi juaj është i rëndësishëm për ne, dhe ne jemi të përkushtuar ta mbrojmë atë gjatë gjithë procesit të regjistrimit.",
           "Please fill out the form below": "Ju lutemi plotësoni formularin e mëposhtëm",
           "InstitutionTitle": "Emri i Institucionit",
           "Title": "Titulli (Dr, Profesor, Mr, Ms, Mrs)",

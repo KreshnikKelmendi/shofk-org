@@ -28,9 +28,9 @@ const SectionBanner = () => {
                         </p>
                     </blockquote>
                     <figcaption className="flex items-center justify-center mt-8 space-x-3">
-                        <div className="flex flex-col lg:flex-row items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                            <div className="lg:pr-3 px-[12px] lg:px-0 text-black w-full font-custom1 lg:w-fit"><b>Prof. Naser Salihu</b></div>
-                            <div className="lg:pl-3 px-[10px] lg:px-0 lg:ml-0 text-sm text-gray-500 font-custom1">{t('7thParagraph')}</div>
+                        <div className="flex flex-col lg:flex-row items-center lg:divide-x-2 divide-gray-500 dark:divide-gray-700">
+                            <div className="lg:pr-3 text-lg lg:px-0 text-black w-full font-custom1 lg:w-fit"><b>Prof. Naser Salihu</b></div>
+                            <div className="lg:pl-3 text-lg lg:px-0 lg:ml-0 text-gray-500 font-custom1">{t('7thParagraph')}</div>
                         </div>
                     </figcaption>
                 </figure>

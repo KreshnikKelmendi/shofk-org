@@ -8,6 +8,8 @@ import Footer from "./components/footer/Footer";
 import VenuePage from "./pages/VenuePage";
 import ContactPage from "./pages/ContactPage";
 import Invited from "./pages/Invited";
+import PresidentLetter from "./pages/PresidentLetter";
+import CongressDates from "./pages/CongressDates";
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/invited-speakers" element={<Invited />} />
+                <Route path="/president-invitation" element={<PresidentLetter />} />
+                <Route path="/date-of-congress" element={<CongressDates />} />
                 <Route path="/venue" element={<VenuePage />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/contact" element={<ContactPage />} />

@@ -89,16 +89,16 @@ const Register = () => {
                 </ol>
             </nav>
             <div className='bg-gray-50'>
-                <div className="text-gray-800 bg-gray-50 lg:px-16 lg:py-6 2xl:pt-6 flex items-center mx-auto p-4">
+                <div className="text-gray-800 bg-gray-50 lg:px-16 2xl:pt-6 flex items-center mx-auto p-4">
                     <div className="grid md:grid-cols-3 items-center shadow-[0_2px_10px_-3px_rgba(6,81,37,0.3)] rounded-md overflow-hidden">
                         <div className="max-md:order-1 bg-[#044f7c] flex flex-col justify-center space-y-16 max-md:mt-16 min-h-full lg:px-8 px-4 py-4 font-custom">
                             <div>
-                                <h4 className="text-white text-lg font-semibold">Register</h4>
-                                <p className="text-[13px] text-white mt-2">Welcome to our registration page! Get started by creating your account.</p>
+                                <h4 className="text-white text-lg font-semibold">{t('Register')}</h4>
+                                <p className="text-[13px] text-white mt-2">{t('registerDescription')}</p>
                             </div>
                             <div>
-                                <h4 className="text-white text-lg font-semibold">Simple & Secure Registration</h4>
-                                <p className="text-[13px] text-white mt-2">Our registration process is designed to be straightforward and secure. We prioritize your privacy and data security.</p>
+                                <h4 className="text-white text-lg font-semibold">{t('simpleRegistration')}</h4>
+                                <p className="text-[13px] text-white mt-2">{t('simpleDescriptionRegister')}</p>
                             </div>
                         </div>
                         <form ref={form} onSubmit={sendEmail} className="md:col-span-2 w-full py-6 px-6 sm:px-16">
@@ -107,14 +107,14 @@ const Register = () => {
                             </div>
                             <div className="space-y-5 font-custom">
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium">{t("InstitutionTitle")}</label>
+                                    <label className="text-sm mb-2 block font-bold">{t("InstitutionTitle")}</label>
                                     <div className="relative flex items-center">
                                         <input
                                             name="institutionTitle"
                                             type="text"
                                             required
                                             className="bg-white border border-gray-300 w-full text-sm px-4 py-2.5 rounded-md outline-blue-500 pl-10"
-                                            placeholder="Institution Title"
+                                            placeholder={t("InstitutionTitle")}
                                         />
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                                             <FontAwesomeIcon icon={faBuilding} />
@@ -123,30 +123,36 @@ const Register = () => {
                                 </div>
 
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium">{t('Title')}</label>
+                                    <label className="text-sm mb-2 block font-bold">{t('Title')}</label>
                                     <div className="relative flex items-center">
-                                        <input
+                                        <select
                                             name="Title"
-                                            type="text"
                                             required
                                             className="bg-white border border-gray-300 w-full text-sm px-4 py-2.5 rounded-md outline-blue-500 pl-10"
-                                            placeholder="Dr, Professor, Mr, Ms, Mrs"
-                                        />
+                                        >
+                                            <option value="" disabled selected hidden>Dr, Professor, Mr, Ms, Mrs</option>
+                                            <option value="Dr">Dr</option>
+                                            <option value="Professor">Professor</option>
+                                            <option value="Mr">Mr</option>
+                                            <option value="Ms">Ms</option>
+                                            <option value="Mrs">Mrs</option>
+                                        </select>
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                                             <FontAwesomeIcon icon={faIdCard} />
                                         </div>
                                     </div>
                                 </div>
 
+
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium">{t('FirstName')}</label>
+                                    <label className="text-sm mb-2 block font-bold">{t('FirstName')}</label>
                                     <div className="relative flex items-center">
                                         <input
                                             name="FirstName"
                                             type="text"
                                             required
                                             className="bg-white border border-gray-300 w-full text-sm px-4 py-2.5 rounded-md outline-blue-500 pl-10"
-                                            placeholder="First Name"
+                                            placeholder={t('FirstName')}
                                         />
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                                             <FontAwesomeIcon icon={faUser} />
@@ -155,14 +161,14 @@ const Register = () => {
                                 </div>
 
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium">{t('LastName')}</label>
+                                    <label className="text-sm mb-2 block font-bold">{t('LastName')}</label>
                                     <div className="relative flex items-center">
                                         <input
                                             name="LastName"
                                             type="text"
                                             required
                                             className="bg-white border border-gray-300 w-full text-sm px-4 py-2.5 rounded-md outline-blue-500 pl-10"
-                                            placeholder="Last Name"
+                                            placeholder={t('LastName')}
                                         />
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                                             <FontAwesomeIcon icon={faUser} />
@@ -171,7 +177,7 @@ const Register = () => {
                                 </div>
 
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium">Email</label>
+                                    <label className="text-sm mb-2 block font-bold">Email</label>
                                     <div className="relative flex items-center">
                                         <input
                                             name="EmailAddress"
@@ -187,14 +193,14 @@ const Register = () => {
                                 </div>
 
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium">{t('Address')}</label>
+                                    <label className="text-sm mb-2 block font-bold">{t('Address')}</label>
                                     <div className="relative flex items-center">
                                         <input
                                             name="Address"
                                             type="text"
                                             required
                                             className="bg-white border border-gray-300 w-full text-sm px-4 py-2.5 rounded-md outline-blue-500 pl-10"
-                                            placeholder="Address"
+                                            placeholder={t('Address')}
                                         />
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                                             <FontAwesomeIcon icon={faMapMarkerAlt} />
@@ -203,14 +209,14 @@ const Register = () => {
                                 </div>
 
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium">{t('City')}</label>
+                                    <label className="text-sm mb-2 block font-bold">{t('City')}</label>
                                     <div className="relative flex items-center">
                                         <input
                                             name="City"
                                             type="text"
                                             required
                                             className="bg-white border border-gray-300 w-full text-sm px-4 py-2.5 rounded-md outline-blue-500 pl-10"
-                                            placeholder="City"
+                                            placeholder={t('City')}
                                         />
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                                             <FontAwesomeIcon icon={faCity} />
@@ -219,14 +225,14 @@ const Register = () => {
                                 </div>
 
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium">{t('Country')}</label>
+                                    <label className="text-sm mb-2 block font-bold">{t('Country')}</label>
                                     <div className="relative flex items-center">
                                         <input
                                             name="Country"
                                             type="text"
                                             required
                                             className="bg-white border border-gray-300 w-full text-sm px-4 py-2.5 rounded-md outline-blue-500 pl-10"
-                                            placeholder="Country"
+                                            placeholder={t('Country')}
                                         />
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                                             <FontAwesomeIcon icon={faGlobe} />
@@ -235,14 +241,14 @@ const Register = () => {
                                 </div>
 
                                 <div>
-                                    <label className="text-sm mb-2 block font-medium font-custom">{t('PhoneNumber')}</label>
+                                    <label className="text-sm mb-2 block font-bold font-custom">{t('PhoneNumber')}</label>
                                     <div className="relative flex items-center">
                                         <input
                                             name="PhoneNumber"
                                             type="text"
                                             required
                                             className="bg-white border border-gray-300 w-full text-sm px-4 py-2.5 rounded-md outline-blue-500 pl-10"
-                                            placeholder="Phone Number"
+                                            placeholder={t('PhoneNumber')}
                                         />
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                                             <FontAwesomeIcon icon={faPhoneAlt} />
@@ -256,7 +262,7 @@ const Register = () => {
                                         className="bg-[#044f7c] text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
                                         disabled={isSending}
                                     >
-                                        {isSending ? 'Sending...' : 'Register'}
+                                        {isSending ? 'Sending...' : t('Register')}
                                     </button>
                                 </div>
                             </div>

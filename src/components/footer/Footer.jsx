@@ -36,7 +36,7 @@ const Footer = () => {
                             <Link to='/venue' onClick={() =>window.scrollTo({top: 0, left: 0, })} class="hover:underline">{t("Venue")}</Link>
                         </li>
                         <li className="mb-4">
-                            <Link to='/registration' onClick={() =>window.scrollTo({top: 0, left: 0, })} class="hover:underline">{t("Registration")}</Link>
+                            <Link to='/register' onClick={() =>window.scrollTo({top: 0, left: 0, })} class="hover:underline">{t("Registration")}</Link>
                         </li>
                         <li className="mb-4">
                             <Link to='/contacts' onClick={() =>window.scrollTo({top: 0, left: 0, })} class="hover:underline">{t("Contacts")}</Link>

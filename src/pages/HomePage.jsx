@@ -4,12 +4,14 @@ import SectionBanner from '../components/Banner/SectionBanner'
 import ImportantDates from '../components/dates/ImportantDates'
 import DataBanner from '../components/Banner/DataBanner'
 import Sponsor from '../components/Banner/Sponsor'
+import Description from '../components/venue/Description'
 
 const HomePage = () => {
   return (
     <>
       <Banner />
-      <SectionBanner />
+      <Description />
+      {/* <SectionBanner /> */}
       <ImportantDates />
       <Sponsor />
       <DataBanner />

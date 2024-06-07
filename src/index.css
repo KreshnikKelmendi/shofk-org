@@ -14,8 +14,8 @@
 }
 
 .active{
-    color: #ff354c;
-    border-bottom: 3px solid #ff354c;
+    /* color: #ff354c; */
+    border-bottom: 2px solid #ff354c;
     width: fit-content;
     scale: 1.07;
 }
